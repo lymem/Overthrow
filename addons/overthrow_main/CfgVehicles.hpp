@@ -143,7 +143,7 @@ class CfgVehicles {
         author = "ARMAzac";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(OT_GanjaItem,1)
+            MACRO_ADDITEM(OT_GanjaItem,1);
         };
     };
 	class OT_BlowItem: Item_Base_F {
@@ -153,7 +153,7 @@ class CfgVehicles {
         author = "ARMAzac";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(OT_BlowItem,1)
+            MACRO_ADDITEM(OT_BlowItem,1);
         };
     };
     //Bag Exploit fix
@@ -222,26 +222,26 @@ class CfgVehicles {
 
 	class LandVehicle;
 	class Car : LandVehicle {
-		MACRO_SALVAGEWRECK
+		MACRO_SALVAGEWRECK;
 	};
 	class Tank : LandVehicle {
-		MACRO_SALVAGEWRECK
+		MACRO_SALVAGEWRECK;
 	};
 	class Motorcycle : LandVehicle {
-		MACRO_SALVAGEWRECK
+		MACRO_SALVAGEWRECK;
 	};
 
 	class Air;
 	class Helicopter : Air {
-		MACRO_SALVAGEWRECK
+		MACRO_SALVAGEWRECK;
 	};
 	class Plane : Air {
-		MACRO_SALVAGEWRECK
+		MACRO_SALVAGEWRECK;
 	};
 
 	class Ship;
 	class Ship_F : Ship {
-		MACRO_SALVAGEWRECK
+		MACRO_SALVAGEWRECK;
 	};
 
 	//Houses (Tanoa)

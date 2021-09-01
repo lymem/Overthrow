@@ -22,7 +22,7 @@
 				statement = "_target call OT_fnc_unflipVehicle"; \
 			}; \
 		}; \
-	};
+	}
 
 
 class CfgVehicles {
@@ -160,7 +160,7 @@ class CfgVehicles {
 	//This filters out "Bag" the infinite bag bag, remove this if you wanna be OP i guess.
 	class ACE_FakeBackpack: Bag_Base {
 		scope = 1;
-		scopecurator =2
+		scopecurator = 2;
 		maximumLoad = "295";
 		mass = 50;
 		displayName = "Bucci Bag";

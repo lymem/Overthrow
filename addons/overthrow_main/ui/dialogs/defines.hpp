@@ -112,7 +112,6 @@ class RscEditOverthrow
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 2;
 	x = 0;
 	y = 0;
@@ -180,7 +179,6 @@ class RscOverthrowText
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 0;
 	idc = -1;
 	colorBackground[] =
@@ -242,7 +240,6 @@ class RscOverthrowStructuredText
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 13;
 	idc = -1;
 	style = 0;
@@ -273,7 +270,6 @@ class RscOverthrowPicture
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 0;
 	idc = -1;
 	style = 2096;
@@ -328,7 +324,6 @@ class RscOverthrowEdit
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 2;
 	x = 0;
 	y = 0;
@@ -396,7 +391,6 @@ class RscOverthrowCombo
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 4;
 	colorSelect[] =
 	{
@@ -570,7 +564,6 @@ class RscOverthrowListBox
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 5;
 	rowHeight = "(((((2560 / safezoneH ) min 1.2) / 1.2) / 25) * 1.6)";
 	onLBSelChanged  = "";
@@ -757,7 +750,6 @@ class RscOverthrowListBox
 
 class RscOverthrowXListBox
 {
-	access = 0;
 	idc = CT_XLISTBOX;
 	type = CT_XLISTBOX;
 	style = SL_HORZ + ST_CENTER + LB_TEXTURES;
@@ -788,7 +780,6 @@ class RscOverthrowButton
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 1;
 	text = "";
 	colorText[] =
@@ -889,7 +880,6 @@ class RscOverthrowGreenButton
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 1;
 	text = "";
 	colorText[] =
@@ -1252,7 +1242,6 @@ class RscOverthrowSlider
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
 	type = 3;
 	style = 1024;
 	w = 0.3;
@@ -1743,7 +1732,6 @@ class RscOverthrowButtonMenuCancel
 };
 class RscOverthrowObject
 {
-		access = 0;
 		idc = -1;
 		type = 81;
 		style = 0x00;

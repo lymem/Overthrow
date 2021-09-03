@@ -7,7 +7,24 @@ A rework of the dynamic and persistent revolution campaign mod for ARMA 3 Apex b
 
 ![overthrowape_logo_tankbg](https://user-images.githubusercontent.com/1497274/130343157-f2abe68c-c644-4c6e-89e6-b526d9bbaa33.png)
 
+# Overthrow 2021 Priest-Dev 
+## (Work in Progress 1wk-2wk expected merge to main branch)
+* More bug fixes (job-factions, FOB placement, are done, and more fixes when it comes up)
+* ALL changes are subject to more changes and complaints
+* In development to revive priests into tech-priests (not the 40k kind)
+* Tech-priests are currently called "Arch-Crypto" _fullname. 
+* They will spawn near churches, work as a money sink to raise late/mid game resistance support in different cities.
+* They will keep a bank for you, linked like the network of warehouses 
+* Banking with them will make passive income to completely absolve the need for trading in the late game (out rank it in efficiency).
+* Currency of "money" or cash in hand, will have a capacity of 1-5 million
+* After 1-5 million, the rest will automatically get converted into the denominations of this new currency system.
+* You cannot buy anything in-land with new currency, but its purpose is to faciliate the growth of income for late game assaults
+* It will also hopefully prevent spamming the server with 1000++++ huntIR monitors for late game trade to make the best money.
+* May even Cap off the infinite sizes of trucks working from import shops. (Maybe)
+
 # Overthrow 2021 Features
+* Perks are D20 based and can be reset
+* Perks in stealth and trade are useful for their intended uses (WIP)
 * Drug prices for half ounces of weed and cocaine has standardized to 2010 prices by the DEA.
 * Drug selling now is based on stability and population in the real world way it works.
 * Drug selling is more profitable
@@ -29,15 +46,20 @@ A rework of the dynamic and persistent revolution campaign mod for ARMA 3 Apex b
 * Initiating trade should also base on skill, a little RNG based on stability/population of the town
 * Standardized truck functions, all big trucks have infinite gear intake through Y menu
 * All trucks boosted in maximumLoad, small trucks doubled, big trucks became mobile ammo boxes in loot carry capacity
+* General make is toggle option now, make/revoke general. (requires admin)
+* Search via ITEM NAME instead of ITEM CLASS NAME. For warehouses and imports.
 
 # Overthrow 2021 Fixes
-* Workshop placement should no longer result on exploding ammo/repair boxes (Thanks to Waterpig on steam)
+* Workshop placement should no longer result on exploding ammo/repair boxes (Thanks to [Waterpig](https://github.com/Majkl-J) on steam)
 * ACE_Fakebackpack is now no longer 1E60 infinitely huge capacity 
 * Harbour NPC no longer runs away and dies during firefight
 * Standardized truck capacity to big trucks, small trucks, and cars
 * No more blank ammo
-* JOBS should be fixed now (testing)
- 
+* JOBS should be fixed now (99%)
+* Exponential numbers no longer show up as 1+91023e6 etc
+* Barracks in NATO FOBs no longer throw errors
+* Items of no names, no images should no longer appear in import/warehouses.
+
 # Overthrow 2021 Future Fixes/Changes
 * ~~Standardizing trucks so "Truck_F" no longer is infinite carry capacity~~
 * unset home to FOB to garrison troops there shouldn't be a requirement to garrison troops

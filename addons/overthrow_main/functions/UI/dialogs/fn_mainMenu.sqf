@@ -30,6 +30,10 @@ private _ctrl = (findDisplay 8001) displayCtrl 1100;
 private _standing = [_town] call OT_fnc_support;
 
 private _rep = server getVariable ["rep",0];
+//For testing use this;
+//[server getVariable ["rep",1], 1, 0, true] call CBA_fnc_formatNumber
+//_rep is formatted to xxx,xxx,xxx placements to avoid funny exponential displays.
+private _rep_formatted = [_rep, 1, 0, true] call CBA_fnc_formatNumber;
 private _extra = "";
 
 if(isMultiplayer && { ((getplayeruid player) in (server getVariable ["generals",[]])) }) then {
@@ -49,11 +53,17 @@ _ctrl ctrlSetStructuredText parseText format[
 		<t align='left' size='0.65'>Fuel Price: $%10/L</t><br/>
 		%11
 	",
-	_town, ["","+"] select (_standing > -1), _standing, OT_nation, ["","+"] select (_rep > -1), _rep,
-	player getVariable ["influence",0],
-	_weather, server getVariable "forecast",
+	_town,								//1 
+	["","+"] select (_standing > -1), 	//2
+	_standing, 							//3
+	OT_nation, 							//4
+	["","+"] select (_rep > -1), 		//5
+	_rep_formatted,						//6
+	player getVariable ["influence",0],	//7
+	_weather, 							//8
+	server getVariable "forecast",		//9
 	[OT_nation,"FUEL",100] call OT_fnc_getPrice,
-	_extra
+	_extra								//11
 ];
 
 _ctrl = (findDisplay 8001) displayCtrl 1106;
@@ -216,12 +226,16 @@ if(typename _b isEqualTo "ARRAY") then {
 		};
 
 		if(typeof _building isEqualTo OT_flag_IND) then {
+			//This counts as player FOBs.
+			//This block here detects barracks in comms alpha even though it's not owned by ind.
 			_base = [];
 			{
 				if((_x select 0) distance _building < 5) exitWith {_base = _x};
 			}foreach(server getvariable ["bases",[]]);
-
+			//Fix this so _ownername is not coming up empty variable;
+			//Added "Someone" hardcoded to try and define unmarked buildings.
 			_ownername = players_NS getVariable format["name%1",_base select 2];
+			if(isNil "_ownername") then {_ownername = "Someone"};
 			ctrlSetText [1608,"Sell"];
 			ctrlEnable [1608,true];
 			ctrlSetText [1608,"Garrison"];
@@ -271,7 +285,8 @@ if(typename _b isEqualTo "ARRAY") then {
 					ctrlEnable [1608,false];
 					ctrlEnable [1609,false];
 					ctrlEnable [1610,false];
-
+					//_ownername is not really defined here;
+					private _ownername = "Someone";
 					_buildingTxt = format["
 						<t align='left' size='0.8'>Barracks</t><br/>
 					",_ownername];
@@ -358,7 +373,7 @@ if(_obpos distance player < 250) then {
 
 		if(_obpos distance player < 250) then {
 			if(_obname in (server getVariable ["GEURowned",[]])) then {
-				ctrlSetText [1201,"\A3\ui_f\data\map\markers\flags\Tanoa_ca.paa"];
+				ctrlSetText [1201,OT_flagImage]; //Changed from \A3\ui_f\data\map\markers\flags\Tanoa_ca.paa to OT_flagimage
 				_areaText = format["
 					<t align='left' size='0.8'>%1</t><br/>
 					<t align='left' size='0.65'>Operational</t><br/>

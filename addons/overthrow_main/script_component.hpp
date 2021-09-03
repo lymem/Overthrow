@@ -28,6 +28,9 @@
 // must define prior to script_mod.hpp
 #define COMPONENT main
 
+//If defined ace_medical will be disabled.
+#define NO_MEDICAL 1
+
 #include "script_mod.hpp"
 
 // Top of script_component.hpp
@@ -47,3 +50,5 @@
 #define DEBUG_SYNCHRONOUS
 
 #include "headers\script_macros.hpp"
+
+

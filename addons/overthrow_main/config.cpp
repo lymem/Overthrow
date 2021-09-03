@@ -5,7 +5,7 @@ class CfgPatches
 {
 	class OT_Overthrow_Main
 	{
-		author="ARMAzac";
+		author="Others";
 		name=COMPONENT_NAME;
 		url="https://steamcommunity.com/sharedfiles/filedetails/?id=774201744";
 		requiredAddons[]=
@@ -14,7 +14,9 @@ class CfgPatches
             "cba_xeh",
             "cba_jr",
 			"ace_main",
+#ifndef NO_MEDICAL
 			"ace_medical",
+#endif
 			"a3_ui_f",
 			"a3_characters_f",
 			"A3_Map_Tanoabuka"

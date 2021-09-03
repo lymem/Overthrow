@@ -24,11 +24,14 @@
 
 // these settings work with CBA_A3 common macros
 
+//If defined ace_medical will be disabled.
+#define NO_MEDICAL 1
+
 #define MOD_NAME Overthrow
 
 #define PREFIX overthrow_main
 
-#define MOD_AUTHOR ARMAzac
+#define MOD_AUTHOR Others
 
 #include "script_version.hpp"
 

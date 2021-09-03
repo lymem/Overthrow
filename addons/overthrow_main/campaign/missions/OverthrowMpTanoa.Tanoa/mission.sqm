@@ -39,7 +39,9 @@ addons[]=
 	"ace_attach",
 	"ace_chemlights",
 	"A3_Weapons_F_Items",
+#ifndef NO_MEDICAL
 	"ace_medical",
+#endif
 	"ace_cargo",
 	"ace_captives",
 	"ace_switchunits",

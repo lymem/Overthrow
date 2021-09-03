@@ -41,12 +41,13 @@ showWatch = 1;
 debriefing = 0;
 
 //Disable ACE blood (just too much of it in a heavy game)
+//Set the default to load a saved game, as that is what would/should be used most.
 class Params {
 	class ot_start_autoload {
 		title = "Autoload a save or start a new game";
 		values[] = {0, 1};
 		texts[] = {"No", "Yes"};
-		default = 0;
+		default = 1;
 	};
 	class ot_start_difficulty {
 		title = "Game difficulty (Only with autoload)";
@@ -78,9 +79,10 @@ class Params {
 		texts[] = {"Yes", "No"};
 		default = 1;
 	};
+#ifndef NO_MEDICAL
 	class ace_medical_level {
         title = "ACE Medical Level";
-        ACE_setting = 1;
+        ACE_setating = 1;
         values[] = {1, 2};
         texts[] = {"Basic", "Advanced"};
         default = 1;
@@ -92,4 +94,5 @@ class Params {
         texts[] = {"None", "Players Only", "All"};
         default = 1;
     };
+#endif
 };

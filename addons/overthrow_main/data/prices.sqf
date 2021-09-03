@@ -19,6 +19,7 @@ OT_priceData = [
 ['ACE_UAVBattery',[40,0,0,4]],
 ['ACE_wirecutter',[25,0,5,0]],
 ['ACE_MapTools',[1,0,0.1,0]],
+#ifndef NO_MEDICAL
 ['ACE_fieldDressing',[1,0,0,0.1]],
 ['ACE_packingBandage',[4,0,0,0.1]],
 ['ACE_elasticBandage',[4,0,0,0.1]],
@@ -30,6 +31,10 @@ OT_priceData = [
 ['ACE_bloodIV',[52,0,0,2]],
 ['ACE_salineIV',[12,0,0,2]],
 ['ACE_quikclot',[4,0,0,0.1]],
+#else
+['FirstAidKit',[1,0,0,0.1]],
+['MediKit',[4,0,0,0.1]],
+#endif
 ['ACE_bodyBag',[2,0,0,0.1]],
 ['ACE_microDAGR',[100,0,0,1]],
 ['ACE_SpraypaintBlack',[10,0,2,0]],
@@ -41,8 +46,10 @@ OT_priceData = [
 ['V_RebreatherIA',[75,0,0,1]],
 
 //New v0.7.8.0
+#ifndef NO_MEDICAL
 ['ACE_tourniquet',[15,0,0,0.1]],
 ['ACE_personalAidKit',[25,0,0,2]],
+#endif
 ['ACE_surgicalKit',[50,0,0,3]],
 ['ACE_RangeTable_82mm',[1,0,0.1,0]],
 ['ACE_SpottingScope',[100,0,8,0]],

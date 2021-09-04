@@ -24,9 +24,6 @@
 
 // these settings work with CBA_A3 common macros
 
-//If defined ace_medical will be disabled.
-#define NO_MEDICAL 1
-
 #define MOD_NAME Overthrow
 
 #define PREFIX overthrow_main
@@ -49,6 +46,9 @@
 #define REQUIRED_ACE_VERSION {3,9,1}
 
 #define COMPONENT_NAME QUOTE(MOD_NAME - VERSION)
+
+//If defined ace_medical will be disabled.
+#define NO_MEDICAL 1
 
 #ifndef VERSION_CONFIG
     #define VERSION_CONFIG version = VERSION; versionStr = QUOTE(VERSION); versionAr[] = {VERSION_AR}

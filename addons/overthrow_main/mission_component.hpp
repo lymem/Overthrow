@@ -79,20 +79,4 @@ class Params {
 		texts[] = {"Yes", "No"};
 		default = 1;
 	};
-#ifndef NO_MEDICAL
-	class ace_medical_level {
-        title = "ACE Medical Level";
-        ACE_setating = 1;
-        values[] = {1, 2};
-        texts[] = {"Basic", "Advanced"};
-        default = 1;
-    };
-    class ace_medical_blood_enabledFor {
-        title = "ACE Blood";
-        ACE_setting = 1;
-        values[] = {0, 1, 2};
-        texts[] = {"None", "Players Only", "All"};
-        default = 1;
-    };
-#endif
 };

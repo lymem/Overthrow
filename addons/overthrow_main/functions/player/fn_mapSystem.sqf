@@ -1,4 +1,4 @@
-if(isMultiplayer) then {
+qif(isMultiplayer) then {
 	addMissionEventHandler ["Draw3D", {
 		if !(OT_showPlayerMarkers) exitWith {};
 		{

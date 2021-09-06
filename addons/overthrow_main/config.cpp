@@ -14,9 +14,6 @@ class CfgPatches
             "cba_xeh",
             "cba_jr",
 			"ace_main",
-#ifndef NO_MEDICAL
-			"ace_medical",
-#endif
 			"a3_ui_f",
 			"a3_characters_f",
 			"A3_Map_Tanoabuka"

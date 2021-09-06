@@ -58,6 +58,14 @@ private _getprice = {
                 _price = 2;
                 _plastic = 0.1;
             };
+            if(_cls find "medikit" > -1) exitWith {
+                _price = 4;
+                _plastic = 2;
+            };
+            if(_cls find "firstaidkit" > -1) exitWith {
+                _price = 1;
+                _plastic = 1;
+            };
         };
     };
     if(_primaryCategory isEqualTo "Electronics") then {

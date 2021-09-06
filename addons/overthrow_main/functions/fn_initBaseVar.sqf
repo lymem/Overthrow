@@ -1,5 +1,4 @@
 //Variables required by mission initVar + can be overriden by mission initVar
-#define NO_MEDICAL
 
 OT_hasAce = true;
 OT_hasTFAR = (isClass (configFile >> "CfgPatches" >> "task_force_radio"));
@@ -15,11 +14,9 @@ OT_CRIMBaseLoadout = [
 	["arifle_MX_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],[],""],
 	[],
 	["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2]]],
-#else
+
+        //["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2]]],
-#endif
 	["V_PlateCarrier1_tna_F",[]],
 	[],
 	"",
@@ -49,11 +46,8 @@ OT_Recruitables = [
         ["arifle_MX_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],[],""],
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        //["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         [],
         "H_HelmetB_tna_F",
@@ -66,11 +60,8 @@ OT_Recruitables = [
         ["arifle_MX_SW_khk_F","","","optic_Aco",["100Rnd_65x39_caseless_khaki_mag",100],[],"bipod_01_F_khk"],
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        //["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier2_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["100Rnd_65x39_caseless_khaki_mag",5,100]]],
         [],
         "H_HelmetB_Light_tna_F",
@@ -83,11 +74,8 @@ OT_Recruitables = [
         ["arifle_MX_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],[],""],
         ["launch_RPG7_F","","","",["RPG7_F",1],[],""],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        //["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         ["B_FieldPack_oli",[["RPG7_F",4,1]]],
         "H_HelmetB_Light_tna_F","",
@@ -99,11 +87,8 @@ OT_Recruitables = [
         ["arifle_MXM_khk_F","","","optic_sos_khk_f",["30Rnd_65x39_caseless_khaki_mag",30],[],"bipod_01_F_khk"],
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        //["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         [],
         "H_HelmetB_tna_F","",
@@ -115,11 +100,8 @@ OT_Recruitables = [
         ["srifle_LRR_tna_F","","","optic_LRPS_tna_f",["7Rnd_408_Mag",7],[],""],
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        // ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["7Rnd_408_Mag",8,7]]],
         [],
         "H_HelmetB_tna_F","",
@@ -132,11 +114,8 @@ OT_Recruitables = [
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
         ["U_I_C_Soldier_Para_4_F",[
-#ifndef NO_MEDICAL
-            ["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2]
-#else
+        //     ["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2]
             ["FirstAidkit",2]
-#endif
         ]],
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         [],
@@ -150,11 +129,8 @@ OT_Recruitables = [
         ["arifle_MX_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],[],""],
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifndef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2]]],
-#else
+        // ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         [],
         "H_HelmetB_tna_F",
@@ -169,11 +145,8 @@ OT_Recruitables = [
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
         ["U_I_C_Soldier_Para_4_F",[]],
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],  
-#ifdef NO_MEDICAL
         ["B_FieldPack_oli",[["ACE_morphine",10],["ACE_epinephrine",10],["ACE_fieldDressing",20]]],
-#else
         ["B_FieldPack_oli",[["Medikit",1]]],
-#endif
         "H_HelmetB_tna_F",
         "",
         [],
@@ -184,11 +157,8 @@ OT_Recruitables = [
         ["arifle_MX_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],[],""],
         ["launch_B_Titan_short_tna_F","","","",["Titan_AT",1],[],""],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        // ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         ["B_FieldPack_oli",[["Titan_AT",2,1]]],
         "H_HelmetB_Light_tna_F","",
@@ -200,11 +170,8 @@ OT_Recruitables = [
         ["arifle_MX_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],[],""],
         ["launch_B_Titan_tna_F","","","",["Titan_AA",1],[],""],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        // ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         ["B_FieldPack_oli",[["Titan_AA",2,1]]],
         "H_HelmetB_Light_tna_F","",
@@ -216,11 +183,8 @@ OT_Recruitables = [
         ["arifle_MX_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],[],""],
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifdef NO_MEDICAL
         ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         ["B_Carryall_oli",[["Titan_AT",3,1]]],
         "H_HelmetB_Light_tna_F",
@@ -233,11 +197,8 @@ OT_Recruitables = [
         ["arifle_MX_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],[],""],
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifndef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        // ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["16Rnd_9x21_Mag",2,17],["MiniGrenade",2,1],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         ["B_Carryall_oli",[["Titan_AA",3,1]]],
         "H_HelmetB_Light_tna_F","",
@@ -249,11 +210,8 @@ OT_Recruitables = [
         ["arifle_MX_GL_khk_F","","","optic_Aco",["30Rnd_65x39_caseless_khaki_mag",30],["1Rnd_HE_Grenade_shell",1],""],
         [],
         ["hgun_P07_khk_F","","","",["16Rnd_9x21_Mag",17],[],""],
-#ifndef NO_MEDICAL
-        ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
-#else
+        // ["U_I_C_Soldier_Para_4_F",[["ACE_morphine",1],["ACE_epinephrine",1],["ACE_fieldDressing",2],["ACE_EarPlugs",1]]],
         ["U_I_C_Soldier_Para_4_F",[["FirstAidkit",2],["ACE_EarPlugs",1]]],
-#endif
         ["V_PlateCarrier1_tna_F",[["HandGrenade",4,1],["MiniGrenade",4,1],["16Rnd_9x21_Mag",2,17],["30Rnd_65x39_caseless_khaki_mag",6,30]]],
         ["B_Kitbag_sgg",[["1Rnd_HE_Grenade_shell",20,1],["1Rnd_SmokeBlue_Grenade_shell",3,1],["1Rnd_SmokeGreen_Grenade_shell",3,1],["1Rnd_SmokeOrange_Grenade_shell",3,1],["1Rnd_Smoke_Grenade_shell",3,1]]],
         "H_HelmetB_Light_tna_F","",

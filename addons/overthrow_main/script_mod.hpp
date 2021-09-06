@@ -47,9 +47,6 @@
 
 #define COMPONENT_NAME QUOTE(MOD_NAME - VERSION)
 
-//If defined ace_medical will be disabled.
-#define NO_MEDICAL 1
-
 #ifndef VERSION_CONFIG
     #define VERSION_CONFIG version = VERSION; versionStr = QUOTE(VERSION); versionAr[] = {VERSION_AR}
 #endif

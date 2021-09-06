@@ -4,4 +4,4 @@ A rework of the dynamic and persistent revolution campaign mod for ARMA 3 Apex b
 Mostly a direct copy of [guilemouse](https://github.com/guilemouse/Overthrow)
 
 # To install
-* !TBD! Overthrow 2021 is available on the [Steam Workshop](https://steamcommunity.com/id/Lyme/myworkshopfiles/?appid=107410)
+* Overthrow minus is available on the [Steam Workshop](https://steamcommunity.com/id/Lyme/myworkshopfiles/?appid=107410)
